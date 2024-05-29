@@ -31,11 +31,10 @@ const Navbar = () => {
             <div id="responsive" className="fixed w-full bg-[#191d249d] text-white z-10 text-center top-16 lg:hidden">
                 <ul className="block">
                     <li className='py-2'><a href="">Home</a></li>
-                    <li className='py-2'><a href="">About</a></li>
-                    <li className='py-2'><a href="">Service</a></li>
-                    <li className='py-2'><a href="">Skills</a></li>
-                    <li className='py-2'><a href="">Projects</a></li>
-                    <li className='py-2'><a href="">Contact</a></li>
+                    <li className='py-2'><a href="#about">About</a></li>
+                    <li className='py-2'><a href="#skils">Skills</a></li>
+                    <li className='py-2'><a href="#project">Projects</a></li>
+                    <li className='py-2'><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </>
