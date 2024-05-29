@@ -36,13 +36,13 @@ const Home = () => {
                         <About downloadCV={downloadCV} judulAbout={judulAbout} />
                     </div>
                 </div>
-                <div className="w-full mb-32" id="skils" data-aos="fade-right"
+                <div className="w-full mb-32" id="skils" data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-offset="500"
                     data-aos-easing="ease-in-out">
                     <Skils judulSkils={judulSkils} />
                 </div>
-                <div className="w-full mb-32 pt-32" id="project" data-aos="fade-left"
+                <div className="w-full mb-32 pt-32" id="project" data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-offset="500"
                     data-aos-easing="ease-in-out">
