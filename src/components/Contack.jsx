@@ -1,7 +1,7 @@
 import Header from "./Header";
 const Contact = ({ judulContact }) => {
     const click = () => {
-        alert('fungsi belum dimasukan')
+        alert('fungsi sedang di buat, jika ingin menghubungi lewat email, silahkan klik tombol "hire Saya " di halaman paling atas')
     }
 
     return (
