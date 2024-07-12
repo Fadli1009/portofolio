@@ -9,7 +9,7 @@ import Skils from "./Skils";
 import Projects from "./Projects";
 import Contact from "./Contack";
 import Footer from "./Footer";
-import downloadCV from '../assets/files/cvfadli.pdf'
+import downloadCV from '../assets/files/cvfadlinew.pdf'
 const Home = () => {
     const ctaEmail = 'mailto:m.fadlikurniawan1009@gmail.com'
     const judulAbout = "About Me"
