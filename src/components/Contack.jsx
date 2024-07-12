@@ -9,27 +9,34 @@ const Contact = ({ judulContact }) => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const sendEmail = (e) => {
-        e.preventDefault();
+        try {
+            e.preventDefault();
 
-        emailjs.sendForm('service_owtvqys', 'template_uust5q1', e.target, 'c225iunQLmE4hqJzK')
-            .then((result) => {
-                swal({
-                    title: "Berhasil!",
-                    text: "Email anda berhasil terkirim",
-                    icon: "success",
+            emailjs.sendForm('service_owtvqys', 'template_uust5q1', e.target, 'c225iunQLmE4hqJzK')
+                .then((result) => {
+                    swal({
+                        title: "Berhasil!",
+                        text: "Email anda berhasil terkirim",
+                        icon: "success",
+                    });
+                }, (error) => {
+                    swal({
+                        title: "Gagal!",
+                        text: "Gagal Mengirim Email, coba lagi",
+                        icon: "error",
+                    });
                 });
-            }, (error) => {
-                swal({
-                    title: "Gagal!",
-                    text: "Gagal Mengirim Email, coba lagi",
-                    icon: "error",
-                });
+
+            e.target.reset(); // Reset form setelah email dikirim
+            setName('')
+            setMessage('')
+            setEmail('')
+        } catch (error) {
+            swal({
+                text: "Harap seluruh pesan diisi",
+                icon: "warning",
             });
-
-        e.target.reset(); // Reset form setelah email dikirim
-        setName('')
-        setMessage('')
-        setEmail('')
+        }
     };
 
     return (
@@ -40,15 +47,15 @@ const Contact = ({ judulContact }) => {
                     <form onSubmit={sendEmail} className="border p-4 rounded-lg">
                         <div className="flex flex-col text-left">
                             <label htmlFor="name">Nama</label>
-                            <input type="text" name="name" className="bg-transparent border outline-none p-2" required onChange={(e) => setName(e.target.value)} />
+                            <input type="text" name="name" className="bg-transparent border outline-none p-2" required onChange={(e) => setName(e.target.value)} placeholder="Masukan nama anda" />
                         </div>
                         <div className="flex flex-col text-left my-5">
                             <label htmlFor="email">Email</label>
-                            <input type="email" name="email" className="bg-transparent border outline-none p-2" required onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" name="email" className="bg-transparent border outline-none p-2" required onChange={(e) => setEmail(e.target.value)} placeholder="Masukan email anda" />
                         </div>
                         <div className="flex flex-col text-left">
                             <label htmlFor="message">Pesan</label>
-                            <textarea name="message" className="bg-transparent border outline-none p-2" required onChange={(e) => setMessage(e.target.value)}></textarea>
+                            <textarea name="message" className="bg-transparent border outline-none p-2" required onChange={(e) => setMessage(e.target.value)} placeholder="Masukan pesan anda" rows={10}></textarea>
                         </div>
                         <div>
                             <button type="submit" className="bg-yellow-400 w-full p-2 mt-3 text-black rounded-lg">Kirim</button>
