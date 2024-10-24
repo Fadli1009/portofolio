@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.7a80fb33.css",
+    "main.js": "./static/js/main.e40b5be6.js",
+    "static/js/453.6a54098e.chunk.js": "./static/js/453.6a54098e.chunk.js",
+    "static/media/dewandarufoto.png": "./static/media/dewandarufoto.8cd4f82083bbef7d1ac6.png",
+    "static/media/yayasan.png": "./static/media/yayasan.88cab37355d0f66de380.png",
+    "static/media/pendaftaran1.png": "./static/media/pendaftaran1.a3b29998205bb9378506.png",
+    "static/media/pendaftaran2.png": "./static/media/pendaftaran2.6b440c706c51b67c99cc.png",
+    "static/media/Fotogue.jpeg": "./static/media/Fotogue.61763628f353fb438a66.jpeg",
+    "static/media/CVFadli.pdf": "./static/media/CVFadli.4b7ab6af01ec0b11cea2.pdf",
+    "static/media/about.jpeg": "./static/media/about.aa85537bd435d9cdeb8d.jpeg",
+    "static/media/lyrafoodWebsite.png": "./static/media/lyrafoodWebsite.b6736d8985a8ea0f0064.png",
+    "static/media/POS.png": "./static/media/POS.f00fe99285996f95bc19.png",
+    "static/media/pendaftaran3.png": "./static/media/pendaftaran3.de7c803ecb0db51b961b.png",
+    "index.html": "./index.html",
+    "main.7a80fb33.css.map": "./static/css/main.7a80fb33.css.map",
+    "main.e40b5be6.js.map": "./static/js/main.e40b5be6.js.map",
+    "453.6a54098e.chunk.js.map": "./static/js/453.6a54098e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a80fb33.css",
+    "static/js/main.e40b5be6.js"
+  ]
+}
